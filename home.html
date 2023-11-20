@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatwave | Home</title>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .chat-container {
+            display: flex;
+            height: 100vh;
+            background: #ba88e6;
+            overflow: hidden;
+        }
+
+        .left-half {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 40px;
+        }
+
+        .left-half img {
+            max-width: 106%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .right-half {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .upper-right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .upper-right h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .upper-right p {
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .flicker-text {
+            animation: flicker 3s infinite;
+        }
+
+        .lower-right {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .vertical-button {
+            padding: 15px 40px;
+            margin: 10px;
+            background: #f57c00;
+            border: none;
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 35px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s;
+        }
+
+        .vertical-button:hover {
+            background: #d84300;
+        }
+
+        .footer {
+            text-align: center;
+            background: #ba88e6;
+            color: #fff;
+            padding: 10px;
+            font-size: larger;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration:underline;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+            color: #d84300;
+        }
+
+        @keyframes flicker {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="left-half">
+            <img src="/images/main_poster.png" alt="Chat Image">
+        </div>
+        <div class="right-half">
+            <div class="upper-right">
+                <h1>Welcome to Chat Wave</h1>
+                <p class="flicker-text">"Chatwave offers a professional yet engaging platform for connecting with friends and participating in community discussions. Elevate your chat experience with us."</p>
+                <div class="lower-right">
+                    <a href="https://chatwave-online.netlify.app/"><button class="vertical-button">Login</button></a>
+                    <a href="/register.html"><button class="vertical-button">Register</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <center> &lt;/&gt; with ❤️ by <a href="/aboutUs.html" target="" rel="noopener noreferrer">Aryan Singh and Team</a></center>
+     </div>
+</body>
+</html>

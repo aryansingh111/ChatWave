@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <title>Chatwave | About Us</title>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #e0c3fc, #b8a9f7);
+            /* Light purple gradient */
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        img {
+            border-radius: 50%;
+            /* Creates circular images */
+            max-width: 100px;
+            /* Adjust the size as needed */
+            height: auto;
+        }
+
+        /* Header Animation */
+        header {
+            text-align: center;
+            animation: fadeIn 1.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Founder and Team Members Animation */
+        .founder,
+        .team-member {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .founder:hover,
+        .team-member:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Mission Animation */
+        .mission {
+            text-align: center;
+            animation: slideIn 1.5s ease-in;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>ABOUT US</h1>
+    </header>
+    <section class="founder">
+        <h1>Founder</h1>
+        <img src="/images/founder.jpg" alt="Founder's Photo">
+        <h3>Aryan Singh</h3>
+        <p>I am an Emerging web developer with a passion for creating innovative and user-friendly websites, equipped with strong coding skills and a creative mindset.</p>
+    </section>
+
+    <section class="team-members">
+        <center><h2>Team Members</h2></center>
+
+        <div class="team-member">
+            <img src="/images/member1.jpg" alt="Team Member 1's Photo">
+            <h3>Shiva Upadhyay</h3>
+            <p>Front End Web Developer on the rise, adapt at coding, problem-solving, and designing captivating websites with a keen eye for detail.</p>
+        </div>
+
+        <div class="team-member">
+            <img src="/images/member2.jpg" alt="Team Member 2's Photo">
+            <h3>Nayab Khan</h3>
+            <p>Promising web designer specializing in modern web technologies, dedicated to crafting dynamic and visually appealing online experiences.</p>
+        </div>
+    </section>
+
+    <section class="mission">
+        <h2>Our Mission</h2>
+        <p>Enhance chat app user experience by implementing streamlined UI, real-time notifications, and robust security measures, engaging and secure interactions.</p>
+    </section>
+<br>
+    <footer>
+        <center><p>&copy; 2023 Chatwave</p></center>
+    </footer>
+</body>
+
+</html>
